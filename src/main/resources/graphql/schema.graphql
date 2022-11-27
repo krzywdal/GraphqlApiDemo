@@ -1,0 +1,34 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Author {
+    firstName: String
+    id: ID
+    lastName: String
+}
+
+type Book {
+    author: Author
+    id: ID
+    name: String
+    pageCount: Int
+}
+
+type Mutation {
+    insertAuthor(createAuthorInput: CreateAuthorInput!): Author!
+}
+
+type Query {
+    authorById(id: ID): Author
+    bookById(id: ID): Book
+}
+
+input CreateAuthorInput {
+    firstName: String!
+    id: String!
+    lastName: String!
+}

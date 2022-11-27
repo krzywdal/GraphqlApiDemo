@@ -1,0 +1,5 @@
+input CreateAuthorInput {
+    id: String!
+    firstName: String!
+    lastName: String!
+}
