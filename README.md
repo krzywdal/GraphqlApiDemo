@@ -1,4 +1,4 @@
-# graphqlApiDemo
+# GraphqlApiDemo
 GraphQL API Demo working with mongodb
 
 
