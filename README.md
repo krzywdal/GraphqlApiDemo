@@ -1,8 +1,19 @@
 # GraphqlApiDemo
 GraphQL API Demo working with mongodb
 
+## GraphQL properties
+
+    spring.graphql.graphiql.enabled=true
+    spring.graphql.graphiql.path=/graphiql
+
 ## GraphQL playground
-http://localhost:8080/graphiql?path=/graphql
+    
+    http://localhost:8080/graphiql?path=/graphql
+
+## MongoDB properties
+
+    spring.data.mongodb.uri=mongodb://localhost:27017/bookdb
+    spring.data.mongodb.auto-index-creation=true
 
 ## To get book by id
     {
