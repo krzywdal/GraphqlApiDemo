@@ -1,6 +1,8 @@
 # GraphqlApiDemo
 GraphQL API Demo working with mongodb
 
+## GraphQL playground
+http://localhost:8080/graphiql?path=/graphql
 
 ## To get book by id
     {
