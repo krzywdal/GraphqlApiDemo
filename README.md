@@ -2,20 +2,24 @@
 GraphQL API Demo working with mongodb
 
 ## GraphQL properties
-
-    spring.graphql.graphiql.enabled=true
-    spring.graphql.graphiql.path=/graphiql
+```
+spring.graphql.graphiql.enabled=true
+spring.graphql.graphiql.path=/graphiql
+```
 
 ## GraphQL playground
-    
-    http://localhost:8080/graphiql?path=/graphql
+```    
+http://localhost:8080/graphiql?path=/graphql
+```
 
 ## MongoDB properties
-
-    spring.data.mongodb.uri=mongodb://localhost:27017/bookdb
-    spring.data.mongodb.auto-index-creation=true
+```
+spring.data.mongodb.uri=mongodb://localhost:27017/bookdb
+spring.data.mongodb.auto-index-creation=true
+```
 
 ## To get book by id
+```
     {
       bookById(id: "book-1") {
         name,
@@ -27,8 +31,10 @@ GraphQL API Demo working with mongodb
         }
       }
     }
+```
 
 ## To get author by id
+```
     {
       authorById(id: "author-1") {
         id,
@@ -36,8 +42,10 @@ GraphQL API Demo working with mongodb
         lastName
       }
     }
+```
 
 ## To add author
+```
     mutation INSERT_NEW_AUTHOR {
         insertAuthor(createAuthorInput: {
             id: "author-1",
@@ -49,3 +57,4 @@ GraphQL API Demo working with mongodb
             lastName
         }
     }
+```
